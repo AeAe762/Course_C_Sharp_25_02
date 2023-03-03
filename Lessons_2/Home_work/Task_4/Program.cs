@@ -5,7 +5,7 @@
 // 1 -> нет
 
 
-//string s_a = Console.ReadLine()!;
+
 void week(int num)
 {
  if (num == 1)
