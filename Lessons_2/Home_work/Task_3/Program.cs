@@ -4,15 +4,15 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-int num = int.Parse(Console.ReadLine()!);
-if (num < 100) Console.WriteLine("Третьей цифры нет");
-else 
+void Num_3(int num)
 {
-  while (num > 999); 
-  num / 10;
-}
-int last_num = num % 10;
-Console.WriteLine(las_num);
+  if (num < 100) 
+  {
+    Console.WriteLine("Третьей цифры нет");
+    return;
+  }
 
-  
- 
+  while (num > 999) num = num / 10;
+  Console.WriteLine(num % 10);
+}
+Num_3(int.Parse(Console.ReadLine()!));
