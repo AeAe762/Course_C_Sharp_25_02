@@ -4,11 +4,11 @@
 void Kvad(int num)
 {
   int num_1 = 1;
-  Console.Write(num);
-  while (num >= num_1)
+  //Console.Write(num);
+  while (num_1 <= num)
   {
-    int result = num * num;
-    Console.Write(result);
+    int result = num_1 * num_1;
+    Console.Write(result + " ");
     num_1++;
   }
   Console.WriteLine();
