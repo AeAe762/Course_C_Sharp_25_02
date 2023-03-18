@@ -38,3 +38,4 @@ int start = int.Parse(Console.ReadLine()!);
 int stop = int.Parse(Console.ReadLine()!);
 int[] mass = MassNums(num, start, stop);
 Print(mass);
+Console.WriteLine(SumPosNeg(mass));
