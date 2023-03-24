@@ -45,7 +45,7 @@ void Srednee_column(int[,] arr)
     {
       summa = summa + arr[i, j];
     }
-    result = summa / arr.GetLength(0);
+    result = Math.Round(summa / arr.GetLength(0), 1);
     Console.Write($"{result}; ");
     summa = 0;
   }
