@@ -5,7 +5,7 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-double[,] Create_Array(int row, int column, double from, double to)
+double[,] Create_Array(int row, int column, int from, int to)
 {
   double[,] array = new double[row, column];
 
@@ -13,7 +13,7 @@ double[,] Create_Array(int row, int column, double from, double to)
   {
     for (int j = 0; j < column; j++)
     {
-      array[i, j] = new Random().Next(-10, 10);
+      array[i, j] = Convert.ToDouble(new Random().Next(from, to))/ 10; 
     }
   }
   return array;
@@ -39,9 +39,9 @@ int row_1 = int.Parse(Console.ReadLine()!);
 Console.Write($"Введите количестов столбцов: ");
 int column_1 = int.Parse(Console.ReadLine()!);
 Console.Write($"Введите число начала массива: ");
-double start = double.Parse(Console.ReadLine()!);
+int start = int.Parse(Console.ReadLine()!);
 Console.Write($"Введите число конца массива: ");
-double stop = double.Parse(Console.ReadLine()!);
+int stop = int.Parse(Console.ReadLine()!);
 double[,] massive = Create_Array(row_1, column_1, start, stop);
 Console.WriteLine();
 Console.WriteLine($"Двумерный массив:");
